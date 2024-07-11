@@ -17,6 +17,10 @@ register_routes(app)
 def home():
     return render_template('index.html')
 
+@app.route('/relos')
+def relos():
+    return render_template('relos.html')
+
 HOST = 'localhost'
 PORT = 4000
 DEBUG = True
